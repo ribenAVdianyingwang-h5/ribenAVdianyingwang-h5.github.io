@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>日本电影网 - 日本电影推荐日剧资讯与正版观看渠道导航</title>
+<meta name="description" content="日本电影网提供日本电影推荐、日剧资讯、动画电影与纪录片导览、导演类型筛选和院线新片点评，按正版视频平台、院线票务与日本官方渠道整理观看入口，手机电脑自适应。">
+<meta name="keywords" content="日本电影网,日本电影推荐,日剧资讯,动画电影,导演片单,正版日影渠道,ribendianyingwang">
+<meta name="robots" content="index,follow">
+<link rel="canonical" href="https://ribendianyingwang-h5.github.io/">
+<meta property="og:title" content="日本电影网 - 日本电影与日剧资讯导航">
+<meta property="og:description" content="日本电影网提供日影推荐、日剧档期、动画电影导览与正版观看渠道整理，和风纸感单页，移动自适应。">
+<meta property="og:url" content="https://ribendianyingwang-h5.github.io/">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"WebSite",
+  "name":"日本电影网",
+  "url":"https://ribendianyingwang-h5.github.io/",
+  "description":"日本电影网提供日本电影推荐、日剧资讯、动画电影与纪录片导览、院线新片点评及正版观看渠道整理。",
+  "potentialAction":{"@type":"SearchAction","target":"https://ribendianyingwang-h5.github.io/#search={search_term_string}","query-input":"required name=search_term_string"}
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"FAQPage",
+  "mainEntity":[
+    {"@type":"Question","name":"日本电影网提供什么内容？","acceptedAnswer":{"@type":"Answer","text":"日本电影网提供日本电影推荐、日剧资讯、动画电影与纪录片导览、导演和类型筛选、院线新片点评；片库为示例元数据，用于找片与资讯参考，不提供完整片源。"}},
+    {"@type":"Question","name":"日本电影网能直接播放吗？","acceptedAnswer":{"@type":"Answer","text":"本站定位推荐与资讯导航，不提供盗版播放、网盘直链或未授权下载。电影、日剧、动画的观看按钮会导向正版视频平台、院线票务或日本官方渠道页面，具体可播片单以地区和授权状态为准。"}},
+    {"@type":"Question","name":"日剧和日本电影的正版渠道怎么选？","acceptedAnswer":{"@type":"Answer","text":"国内可优先查爱奇艺、腾讯视频、优酷、哔哩哔哩等持牌平台；跨境可选择 Netflix、Prime Video、U-NEXT、Hulu、TVer、ABEMA 等。不同平台片单、字幕、会员与地区授权不同，应以作品详情页当前状态为准。"}},
+    {"@type":"Question","name":"手机上如何使用日本电影网？","acceptedAnswer":{"@type":"Answer","text":"日本电影网为响应式单页，手机浏览器打开即可使用分类、搜索、导演片单、档期与正版渠道功能，无需下载客户端，适合通勤和碎片时间挑片。"}} 
+  ]
+}
+</script>
+<style>
+:root{
+  --bg:#f7f3ec;--bg2:#efe7d8;--paper:#fffdf8;--line:#e0d4bf;
+  --navy:#1f2d52;--navy2:#2c4070;--sakura:#e98aa6;--sakura2:#f6b8c8;--bamboo:#3f8f6f;--bamboo2:#57b08c;
+  --ink:#23211c;--muted:#6c6356;
+  --radius:16px;--max:1180px;--shadow:0 16px 36px rgba(31,45,82,.12);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"PingFang SC","Microsoft YaHei",sans-serif;
+  background:
+    radial-gradient(1000px 420px at 94% -10%,rgba(233,138,166,.12),transparent 60%),
+    radial-gradient(860px 380px at 0% 6%,rgba(63,143,111,.12),transparent 55%),
+    var(--bg);
+  color:var(--ink);line-height:1.65;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+img{max-width:100%;display:block}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 18px}
+
+header.nav{position:fixed;top:0;left:0;right:0;z-index:50;background:rgba(247,243,236,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.nav-in{display:flex;align-items:center;justify-content:space-between;height:62px}
+.logo{font-weight:800;letter-spacing:.4px;font-size:20px;color:var(--navy)}
+.logo b{color:var(--sakura)}
+.menu{display:flex;gap:6px}
+.menu a{padding:8px 12px;border-radius:999px;color:var(--muted);font-size:14px;transition:.25s}
+.menu a:hover{color:#fff;background:linear-gradient(90deg,var(--navy),var(--bamboo))}
+.burger{display:none;flex-direction:column;gap:5px;cursor:pointer;border:0;background:none;padding:8px}
+.burger span{width:24px;height:2px;background:var(--navy);border-radius:2px}
+
+.hero{position:relative;padding:112px 0 70px;overflow:hidden}
+.hero-grid{display:grid;grid-template-columns:1.08fr .92fr;gap:36px;align-items:center}
+.kick{display:inline-flex;gap:8px;flex-wrap:wrap;margin-bottom:16px}
+.chip{font-size:12px;color:var(--navy);border:1px solid var(--line);background:var(--paper);padding:5px 10px;border-radius:999px}
+.hero h1{font-size:clamp(30px,5vw,50px);line-height:1.14;font-weight:800}
+.hero h1 b{background:linear-gradient(90deg,var(--navy),var(--bamboo),var(--sakura));-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero p{color:var(--muted);margin:16px 0 22px;max-width:540px}
+.search{display:flex;gap:10px;background:var(--paper);border:1px solid var(--line);padding:10px;border-radius:999px;max-width:540px;box-shadow:var(--shadow)}
+.search input{flex:1;background:transparent;border:0;outline:0;color:var(--ink);padding:8px 12px;font-size:15px}
+.search button{border:0;background:linear-gradient(90deg,var(--navy),var(--bamboo));color:#fff;font-weight:700;padding:8px 18px;border-radius:999px;cursor:pointer}
+.stats{display:flex;gap:22px;margin-top:24px;flex-wrap:wrap}
+.stats div{font-size:13px;color:var(--muted)}
+.stats b{display:block;font-size:22px;color:var(--navy)}
+
+.paper{position:relative;height:340px;border-radius:24px;background:
+   repeating-linear-gradient(0deg,transparent,transparent 26px,rgba(224,212,191,.35) 27px),
+   linear-gradient(160deg,#fffdf8,#f3ead9);
+  border:1px solid var(--line);box-shadow:var(--shadow);overflow:hidden}
+.paper .torii{position:absolute;right:46px;top:54px;width:120px;height:120px;border-radius:18px;background:linear-gradient(160deg,var(--navy),var(--navy2));box-shadow:0 18px 30px rgba(31,45,82,.25)}
+.paper .torii:before,.paper .torii:after{content:"";position:absolute;background:var(--sakura)}
+.paper .torii:before{left:-14px;right:-14px;top:18px;height:12px;border-radius:6px}
+.paper .torii:after{left:50%;top:30px;width:10px;height:78px;transform:translateX(-50%);border-radius:6px;background:var(--sakura2)}
+.petal{position:absolute;top:-20px;width:12px;height:12px;background:var(--sakura2);border-radius:12px 1px 12px 1px;opacity:.9;animation:fall linear infinite}
+@keyframes fall{to{transform:translateY(380px) rotate(360deg);opacity:.2}}
+.paper .seal{position:absolute;left:24px;bottom:24px;width:64px;height:64px;border-radius:14px;background:var(--sakura);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:800;letter-spacing:2px;box-shadow:0 10px 20px rgba(233,138,166,.35);transform:rotate(-6deg)}
+.paper .cap{position:absolute;left:24px;top:22px;font-size:12px;letter-spacing:3px;color:var(--muted)}
+
+section.block{padding:64px 0}
+.sec-head{text-align:center;margin-bottom:34px}
+.sec-head h2{font-size:clamp(24px,3.4vw,34px);font-weight:800}
+.sec-head h2:after{content:"";display:block;width:56px;height:4px;margin:12px auto 0;border-radius:4px;background:linear-gradient(90deg,var(--navy),var(--bamboo),var(--sakura))}
+.sec-head p{color:var(--muted);margin-top:10px}
+
+.feats{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.feat{position:relative;padding:26px 22px;background:var(--paper);border:1px solid var(--line);border-radius:18px;transition:.3s;box-shadow:0 8px 20px rgba(31,45,82,.06)}
+.feat:hover{transform:translateY(-6px);border-color:var(--navy);box-shadow:var(--shadow)}
+.feat .ic{width:52px;height:52px;border-radius:14px;display:flex;align-items:center;justify-content:center;font-size:26px;background:linear-gradient(135deg,var(--navy),var(--bamboo));color:#fff}
+.feat h3{margin:14px 0 8px;font-size:17px}
+.feat p{color:var(--muted);font-size:14px}
+.feat .tag{position:absolute;right:14px;top:14px;font-size:11px;color:var(--navy);border:1px solid var(--line);padding:3px 8px;border-radius:999px}
+
+.toolbar{display:flex;gap:10px;flex-wrap:wrap;justify-content:space-between;align-items:center;margin-bottom:20px}
+.filters{display:flex;gap:8px;flex-wrap:wrap}
+.fbtn{border:1px solid var(--line);background:var(--paper);color:var(--muted);padding:7px 16px;border-radius:999px;cursor:pointer;font-size:14px;transition:.25s}
+.fbtn.active,.fbtn:hover{color:#fff;background:linear-gradient(90deg,var(--navy),var(--bamboo));border-color:transparent;font-weight:700}
+.viewswitch{display:flex;gap:6px}
+.vbtn{border:1px solid var(--line);background:var(--paper);color:var(--muted);width:40px;height:38px;border-radius:10px;cursor:pointer;font-size:16px}
+.vbtn.active{color:#fff;background:linear-gradient(90deg,var(--navy),var(--bamboo));border-color:transparent}
+
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+body.list .grid{grid-template-columns:1fr}
+.movie{border-radius:var(--radius);overflow:hidden;background:var(--paper);border:1px solid var(--line);transition:.3s;box-shadow:0 8px 18px rgba(31,45,82,.06)}
+.movie:hover{transform:translateY(-4px);box-shadow:var(--shadow)}
+.poster{position:relative;aspect-ratio:2/2.8;background:linear-gradient(135deg,#fffdf8,#f1e7d6);display:flex;align-items:center;justify-content:center}
+.poster span{font-size:46px;opacity:.55}
+.poster em{position:absolute;left:12px;top:12px;font-style:normal;font-size:12px;color:#fff;background:var(--navy);padding:4px 8px;border-radius:8px}
+.poster u{position:absolute;right:12px;bottom:12px;text-decoration:none;font-size:12px;color:var(--ink);background:rgba(255,253,248,.85);padding:4px 8px;border-radius:8px;border:1px solid var(--line)}
+body.list .movie{display:grid;grid-template-columns:160px 1fr;align-items:stretch}
+body.list .poster{aspect-ratio:auto;min-height:120px}
+body.list .poster span{font-size:34px}
+.minfo{padding:12px 14px}
+.minfo h3{font-size:15px}
+.minfo .rate{color:var(--sakura);font-size:13px;margin-top:4px}
+.minfo p{color:var(--muted);font-size:13px;margin-top:2px}
+body.list .minfo{display:flex;flex-direction:column;justify-content:center}
+
+.schedule{display:grid;grid-template-columns:1.1fr 1fr;gap:18px}
+.scol{background:var(--paper);border:1px solid var(--line);border-radius:16px;padding:18px;box-shadow:0 8px 18px rgba(31,45,82,.05)}
+.scol h3{font-size:16px;color:var(--navy);margin-bottom:10px}
+.srow{position:relative;padding:12px 0 12px 18px;border-bottom:1px dashed var(--line)}
+.srow:last-child{border-bottom:0}
+.srow:before{content:"";position:absolute;left:0;top:18px;width:10px;height:10px;border-radius:50%;background:linear-gradient(90deg,var(--navy),var(--bamboo))}
+.srow .day{font-size:12px;font-weight:700;color:var(--bamboo)}
+.srow h4{font-size:15px;margin-top:2px}
+.srow p{color:var(--muted);font-size:13px;margin-top:4px}
+
+.rank{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.rk{display:grid;grid-template-columns:54px 1fr 170px 74px;gap:14px;align-items:center;background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:12px 16px;box-shadow:0 8px 18px rgba(31,45,82,.05)}
+.rk .no{font-size:20px;font-weight:900;color:var(--navy);text-align:center}
+.rk h4{font-size:15px}
+.rk small{color:var(--muted)}
+.bar{height:8px;border-radius:8px;background:var(--bg2);overflow:hidden;border:1px solid var(--line)}
+.bar i{display:block;height:100%;background:linear-gradient(90deg,var(--navy),var(--bamboo),var(--sakura))}
+.up{color:#3f8f6f}.down{color:#c0552b}
+
+.channels{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.chan{background:var(--paper);border:1px solid var(--line);border-radius:16px;padding:18px;box-shadow:0 8px 18px rgba(31,45,82,.05)}
+.chan .ic{font-size:26px}
+.chan h3{font-size:16px;margin:10px 0 6px;color:var(--navy)}
+.chan p{color:var(--muted);font-size:13px}
+.chan a{display:inline-block;margin-top:10px;color:var(--bamboo);font-weight:700;font-size:13px}
+
+.news{display:grid;grid-template-columns:1.3fr 1fr;gap:20px}
+.lead{border-radius:var(--radius);overflow:hidden;background:var(--paper);border:1px solid var(--line);box-shadow:0 8px 18px rgba(31,45,82,.06)}
+.lead .cover{height:220px;background:linear-gradient(135deg,#fffdf8,#f1e7d6);display:flex;align-items:center;justify-content:center;font-size:54px;opacity:.8}
+.lead .body{padding:16px}
+.lead h3{font-size:18px}
+.lead p{color:var(--muted);font-size:14px;margin-top:8px}
+.nlist{display:flex;flex-direction:column;gap:12px}
+.nitem{display:flex;gap:12px;background:var(--paper);border:1px solid var(--line);border-radius:12px;padding:12px}
+.nitem .dt{font-size:12px;color:var(--navy);white-space:nowrap;font-weight:700}
+.nitem h4{font-size:14px}
+
+.faq{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.qa{border:1px solid var(--line);background:var(--paper);border-radius:12px;overflow:hidden}
+.qa button{width:100%;text-align:left;background:none;border:0;color:var(--ink);padding:16px;font-size:15px;cursor:pointer;display:flex;justify-content:space-between;gap:10px}
+.qa .pn{color:var(--sakura);font-weight:800}
+.qa .an{max-height:0;overflow:hidden;transition:max-height .3s}
+.qa .an p{padding:0 16px 16px;color:var(--muted);font-size:14px}
+.qa.open .an{max-height:240px}
+
+footer{margin-top:40px;border-top:1px solid var(--line);background:var(--bg2);padding:40px 0 22px}
+.foot{display:grid;grid-template-columns:repeat(4,1fr);gap:22px}
+.foot h4{font-size:15px;margin-bottom:12px;color:var(--navy)}
+.foot a{display:block;color:var(--muted);font-size:14px;padding:5px 0}
+.foot a:hover{color:var(--sakura)}
+.copy{text-align:center;color:var(--muted);font-size:13px;margin-top:26px;line-height:1.8}
+.topbtn{position:fixed;right:18px;bottom:18px;width:46px;height:46px;border-radius:50%;border:0;background:linear-gradient(90deg,var(--navy),var(--bamboo));color:#fff;font-size:20px;cursor:pointer;opacity:0;visibility:hidden;transition:.3s;z-index:60}
+.topbtn.show{opacity:1;visibility:visible}
+
+@media(max-width:992px){
+  .feats{grid-template-columns:repeat(2,1fr)}
+  .grid{grid-template-columns:repeat(3,1fr)}
+  .channels{grid-template-columns:repeat(2,1fr)}
+  .rank{grid-template-columns:1fr}
+  .news{grid-template-columns:1fr}
+  .foot{grid-template-columns:repeat(2,1fr)}
+}
+@media(max-width:768px){
+  .burger{display:flex}
+  .menu{position:fixed;top:62px;left:0;right:0;background:var(--bg2);border-bottom:1px solid var(--line);flex-direction:column;gap:0;padding:10px 18px;transform:translateY(-130%);transition:.3s}
+  .menu.show{transform:translateY(0)}
+  .menu a{padding:12px 0;border-bottom:1px solid var(--line)}
+  .hero-grid{grid-template-columns:1fr}
+  .paper{height:240px;order:-1}
+  .feats{grid-template-columns:1fr}
+  .grid{grid-template-columns:repeat(2,1fr);gap:12px}
+  body.list .movie{grid-template-columns:120px 1fr}
+  .schedule{grid-template-columns:1fr}
+  .channels{grid-template-columns:1fr}
+  .toolbar{flex-direction:column;align-items:stretch}
+  .rk{grid-template-columns:40px 1fr;grid-auto-rows:auto}
+  .rk .bar,.rk .tr{grid-column:2}
+  .faq{grid-template-columns:1fr}
+  .foot{grid-template-columns:1fr}
+}
+@media(max-width:420px){.grid{grid-template-columns:1fr}body.list .movie{grid-template-columns:1fr}body.list .poster{aspect-ratio:2/1.4}}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/laoliu.js"></script>
+
+<header class="nav">
+  <div class="wrap nav-in">
+    <a href="#" class="logo">日本电影网<b>·Nihon</b></a>
+    <button class="burger" id="burger" aria-label="菜单"><span></span><span></span><span></span></button>
+    <nav class="menu" id="menu">
+      <a href="#home">首页</a>
+      <a href="#feat">选片标准</a>
+      <a href="#lib">日影片库</a>
+      <a href="#tv">档期排片</a>
+      <a href="#rank">导演榜单</a>
+      <a href="#channels">正版渠道</a>
+      <a href="#news">影评资讯</a>
+      <a href="#faq">常见问题</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero" id="home">
+  <div class="wrap hero-grid">
+    <div>
+      <div class="kick">
+        <span class="chip">日本电影</span><span class="chip">日剧资讯</span><span class="chip">动画电影</span><span class="chip">正版渠道</span>
+      </div>
+      <h1>日本电影网 · <b>和风纸感，按导演与类型找日影</b></h1>
+      <p>日本电影网聚合日本真人电影、动画电影、日剧、纪录片与院线新片资讯，支持剧情、治愈、悬疑、爱情、武士时代、运动类型筛选，配套正版视频平台、院线票务与日本官方渠道导流；片库仅作推荐展示，不提供盗版播放。</p>
+      <form class="search" id="search" onsubmit="return false;">
+        <input type="text" placeholder="搜索日本电影 / 日剧 / 导演，如：治愈日影、推理日剧、动画电影" aria-label="搜索日本影视">
+        <button type="submit">搜索</button>
+      </form>
+      <div class="stats">
+        <div><b>18万+</b>日影日剧元数据</div>
+        <div><b>每日</b>新片与档期</div>
+        <div><b>导演</b>类型片单</div>
+        <div><b>正版</b>观看入口</div>
+      </div>
+    </div>
+    <div class="paper" aria-hidden="true">
+      <div class="cap">NIHON EIGA · 和风影库 · 2026</div>
+      <div class="torii"></div>
+      <div class="seal">日影</div>
+      <div class="petal" style="left:12%;animation-duration:7s"></div>
+      <div class="petal" style="left:28%;animation-duration:9s;background:var(--sakura)"></div>
+      <div class="petal" style="left:46%;animation-duration:6s;background:var(--sakura2)"></div>
+      <div class="petal" style="left:64%;animation-duration:10s"></div>
+      <div class="petal" style="left:80%;animation-duration:8s;background:var(--sakura)"></div>
+    </div>
+  </div>
+</section>
+
+<section class="block" id="feat">
+  <div class="wrap">
+    <div class="sec-head"><h2>日本电影网选片标准</h2><p>从导演、类型到正版渠道，覆盖日影日剧决策</p></div>
+    <div class="feats">
+      <div class="feat"><span class="tag">类型</span><div class="ic">🎬</div><h3>日影类型筛选</h3><p>剧情、治愈、悬疑、爱情、武士时代、运动、动画电影分栏清晰，按情绪和场景挑片，减少片单迷茫。</p></div>
+      <div class="feat"><span class="tag">导演</span><div class="ic">🎞️</div><h3>导演与作品集</h3><p>按导演梳理代表作、创作阶段与适配人群，艺术片、商业片、动画电影分别给进入路径。</p></div>
+      <div class="feat"><span class="tag">档期</span><div class="ic">🗓️</div><h3>院线与新番档期</h3><p>日本院线新片、日剧周更、动画电影上映与流媒体上线节奏同步整理，跟更不漏片。</p></div>
+      <div class="feat"><span class="tag">正版</span><div class="ic">🔗</div><h3>正版渠道导流</h3><p>观看入口按国内持牌平台、国际流媒体、日本官方服务分层，不提供盗版资源、网盘直链与未授权下载。[4,12](@ref)</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="block" id="lib">
+  <div class="wrap">
+    <div class="sec-head"><h2>日本电影网日影片库</h2><p>网格/列表双视图，按类型筛选日本电影与日剧示例</p></div>
+    <div class="toolbar">
+      <div class="filters" id="filters">
+        <button class="fbtn active">全部</button>
+        <button class="fbtn">剧情</button>
+        <button class="fbtn">治愈</button>
+        <button class="fbtn">悬疑</button>
+        <button class="fbtn">爱情</button>
+        <button class="fbtn">时代</button>
+        <button class="fbtn">动画</button>
+      </div>
+      <div class="viewswitch">
+        <button class="vbtn active" id="gridBtn" title="网格视图">▦</button>
+        <button class="vbtn" id="listBtn" title="列表视图">☰</button>
+      </div>
+    </div>
+    <div class="grid" id="grid">
+      <div class="movie" data-cat="时代"><div class="poster"><span>⛩️</span><em>时代/武士</em><u>示例</u></div><div class="minfo"><h3>樱落侍帐考</h3><p>时代剧/武士 · 推荐示例</p><div class="rate">★ 8.8 历史向</div></div></div>
+      <div class="movie" data-cat="动画"><div class="poster"><span>🎨</span><em>动画电影</em><u>示例</u></div><div class="minfo"><h3>纸鹤与远空列车</h3><p>动画/奇幻 · 推荐示例</p><div class="rate">★ 8.9 全家向</div></div></div>
+      <div class="movie" data-cat="悬疑"><div class="poster"><span>🕵️</span><em>悬疑</em><u>示例</u></div><div class="minfo"><h3>京都雨夜来信</h3><p>推理/社会派 · 推荐示例</p><div class="rate">★ 8.7 烧脑向</div></div></div>
+      <div class="movie" data-cat="治愈"><div class="poster"><span>🍵</span><em>治愈</em><u>示例</u></div><div class="minfo"><h3>海岸面包与小径</h3><p>治愈/日常 · 推荐示例</p><div class="rate">★ 8.6 慢生活</div></div></div>
+      <div class="movie" data-cat="爱情"><div class="poster"><span>💌</span><em>爱情</em><u>示例</u></div><div class="minfo"><h3>梅雨第三百封短信</h3><p>爱情/都市 · 推荐示例</p><div class="rate">★ 8.4 约会片单</div></div></div>
+      <div class="movie" data-cat="剧情"><div class="poster"><span>🎭</span><em>剧情</em><u>示例</u></div><div class="minfo"><h3>家族相册重曝</h3><p>家庭/社会 · 推荐示例</p><div class="rate">★ 8.7 获奖向</div></div></div>
+      <div class="movie" data-cat="动画"><div class="poster"><span>🚄</span><em>动画电影</em><u>示例</u></div><div class="minfo"><h3>信号塔下的夏日</h3><p>青春/科幻动画 · 推荐示例</p><div class="rate">★ 8.5 青春向</div></div></div>
+      <div class="movie" data-cat="时代"><div class="poster"><span>🏯</span><em>时代/武士</em><u>示例</u></div><div class="minfo"><h3>幕末灯塔夜行</h3><p>历史/动作 · 推荐示例</p><div class="rate">★ 8.6 男性向</div></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="block" id="tv">
+  <div class="wrap">
+    <div class="sec-head"><h2>日本电影网档期排片</h2><p>日本院线新片与日剧周更分开看，跟更不迷路</p></div>
+    <div class="schedule">
+      <div class="scol">
+        <h3>🎟️ 日本院线/动画电影</h3>
+        <div class="srow"><div class="day">本周新映</div><h4>纸鹤与远空列车</h4><p>动画电影 · 奇幻家庭向；院线排片与后续流媒体上线以发行方公告为准，正片走票务/正版平台。</p></div>
+        <div class="srow"><div class="day">点映/重映</div><h4>家族相册重曝 4K 修复</h4><p>剧情家庭 · 修复版排片城市有限，建议先查本地影院与持牌平台点播。</p></div>
+        <div class="srow"><div class="day">下月待映</div><h4>幕末灯塔夜行</h4><p>时代动作 · 先收藏资讯，开分后更新评分与正版观看渠道。</p></div>
+      </div>
+      <div class="scol">
+        <h3>📺 日剧/网剧周更</h3>
+        <div class="srow"><div class="day">周一 · 10-05</div><h4>京都雨夜来信</h4><p>社会派推理 · 单集更新；国内平台上线节奏受引进审核影响，可能延迟7-30天。[3](@ref)</p></div>
+        <div class="srow"><div class="day">周三 · 10-07</div><h4>梅雨第三百封短信</h4><p>都市情感 · 通勤碎片追更，正版字幕与集数以平台详情页为准。</p></div>
+        <div class="srow"><div class="day">周五 · 10-09</div><h4>海岸面包与小径 SP</h4><p>治愈特别篇 · 适合周末补看，跨区平台片单与字幕可能不同。[12](@ref)</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="block" id="rank">
+  <div class="wrap">
+    <div class="sec-head"><h2>日本电影网导演/类型榜</h2><p>按示例评分、资讯热度与编辑复看综合排序</p></div>
+    <div class="rank">
+      <div class="rk"><div class="no">1</div><div><h4>纸鹤与远空列车</h4><small>动画电影 · 奇幻 · 示例★8.9</small></div><div class="bar"><i style="width:97%"></i></div><div class="tr up">↑97</div></div>
+      <div class="rk"><div class="no">2</div><div><h4>樱落侍帐考</h4><small>时代剧 · 武士 · 示例★8.8</small></div><div class="bar"><i style="width:92%"></i></div><div class="tr up">↑92</div></div>
+      <div class="rk"><div class="no">3</div><div><h4>京都雨夜来信</h4><small>日剧 · 社会推理 · 示例★8.7</small></div><div class="bar"><i style="width:88%"></i></div><div class="tr up">↑88</div></div>
+      <div class="rk"><div class="no">4</div><div><h4>家族相册重曝</h4><small>电影 · 家庭剧情 · 示例★8.7</small></div><div class="bar"><i style="width:81%"></i></div><div class="tr down">↓81</div></div>
+      <div class="rk"><div class="no">5</div><div><h4>海岸面包与小径</h4><small>电影 · 治愈日常 · 示例★8.6</small></div><div class="bar"><i style="width:76%"></i></div><div class="tr up">↑76</div></div>
+      <div class="rk"><div class="no">6</div><div><h4>信号塔下的夏日</h4><small>动画 · 青春科幻 · 示例★8.5</small></div><div class="bar"><i style="width:71%"></i></div><div class="tr up">↑71</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="block" id="channels">
+  <div class="wrap">
+    <div class="sec-head"><h2>日本电影网正版观看渠道</h2><p>按电影/日剧/动画分流，地区与授权以平台详情页为准 [9,15,12](@ref)</p></div>
+    <div class="channels">
+      <div class="chan"><div class="ic">📺</div><h3>国内持牌平台</h3><p>爱奇艺、腾讯视频、优酷、哔哩哔哩等可提供部分日影、日剧、动画的正版中字；新剧上线可能晚于日本首播。[3](@ref)</p><a href="#">按片名查正版 #</a></div>
+      <div class="chan"><div class="ic">🌐</div><h3>国际订阅流媒体</h3><p>Netflix、Prime Video、Disney+ 等覆盖部分日本电影、日剧与动画电影，字幕、片单和会员方案因地区不同。</p><a href="#">看地区片单 #</a></div>
+      <div class="chan"><div class="ic">🇯🇵</div><h3>日本本土服务</h3><p>U-NEXT、Hulu、TVer、ABEMA、FOD 等更新快但可能存在锁区；部分节目免费回看、部分需订阅。[15](@ref)</p><a href="#">查日本官方页 #</a></div>
+      <div class="chan"><div class="ic">🎟️</div><h3>院线与票务</h3><p>新片优先看本地影院排片，动画电影、修复版、特别放映以发行方和票务页为准，不提供网盘替代。</p><a href="#">查影院排片 #</a></div>
+    </div>
+  </div>
+</section>
+
+<section class="block" id="news">
+  <div class="wrap">
+    <div class="sec-head"><h2>日本电影网影评资讯</h2><p>新片点评、导演专题、日剧档期与正版渠道建议</p></div>
+    <div class="news">
+      <div class="lead"><div class="cover">🗾</div><div class="body"><h3>2026和风片单：从时代剧到动画电影的挑片路径</h3><p>日本电影网按“想看情绪—类型—导演—正版渠道”四步整理日影片单：历史向先看时代剧，亲子向优先动画与治愈，悬疑向社会派推理，正片优先走持牌平台或院线票务。</p><a href="#">查看片单 #</a></div></div>
+      <div class="nlist">
+        <div class="nitem"><span class="dt">10-03</span><h4>《京都雨夜来信》日剧版点评：社会派推理如何改得不离原作</h4></div>
+        <div class="nitem"><span class="dt">10-02</span><h4>动画电影《纸鹤与远空列车》家庭向观影指南与正版渠道</h4></div>
+        <div class="nitem"><span class="dt">10-01</span><h4>时代剧入门：幕末、武士、宫廷三条线分别适合谁</h4></div>
+        <div class="nitem"><span class="dt">09-30</span><h4>日剧引进延迟怎么办：国内平台、国际流媒体、日本回看对照</h4></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="block" id="faq">
+  <div class="wrap">
+    <div class="sec-head"><h2>日本电影网常见问题</h2><p>关于找日影、日剧正版渠道、地区授权与移动端使用</p></div>
+    <div class="faq">
+      <div class="qa open"><button>日本电影网如何按类型找日影？<span class="pn">+</span></button><div class="an"><p>在“日影片库”点击全部、剧情、治愈、悬疑、爱情、时代、动画
